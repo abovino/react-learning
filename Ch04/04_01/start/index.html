@@ -15,9 +15,12 @@
                     return <div>
                         <h1>{this.props.text}</h1>
                         <p>{this.props.children}</p>
+                        <h1>Hello World</h1>
+                        <p>This is my first React component!</p>
                     </div>
                 }
             })
+
 
             ReactDOM.render(<div>
                 <MyComponent text="Hello World">
@@ -30,6 +33,7 @@
                     This is message 3
                 </MyComponent>
                 </div>,
+            ReactDOM.render(<MyComponent />,
                 document.getElementById('react-container'))
 
         </script>
